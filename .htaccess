@@ -1,0 +1,10 @@
+# Matikan daftar isi folder
+Options -Indexes
+
+# File pendukung tidak boleh dibuka langsung lewat browser
+<FilesMatch "^(koneksi|layout)\.php$">
+  Require all denied
+</FilesMatch>
+
+# Pastikan font dikenali browser
+AddType font/woff .woff
